@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Santiago Gomez Garcia">
+  <meta name="keywords" content="html, example, homework, basics">
+  <meta name="description" content="Taller evaluativo programación 4">
+  <title>educacion</title>
+</head>
+<style>
+  #dos {
+    border: solid 1px;
+    padding: 100px;
+    width: 50%;
+    margin: 0 auto;
+    background: #FFFFFF;
+  }
+
+  legend {
+    border: solid 1px #0000c5;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  body {
+    background: url(IMG_20210806_171831749_HDR-01.jpeg);
+  }
+</style>
+
+<body>
+  <div id="dos">
+    <img src="LOGO.jpg" width="150" /> <br /><br />
+    <h1>
+      HOJA DE VIDA
+    </h1>
+    <br /><br />
+    <a href="index.html">INICIO</a>
+    <a href="educacion.html">EDUCACIÓN</a>
+    <a href="experiencia.html">EXPERIENCIA</a>
+    <br /><br />
+
+    <fieldset>
+      <h2>EDUCACIÓN</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>AÑO</th>
+            <th>INSTITUCIÓN</th>
+            <th>SEDE</th>
+            <th>¿CULMINÓ?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2007-2012</td>
+            <td>I.E San Francisco de Paula</td>
+            <td>Maria Inmaculada</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2013-2018</td>
+            <td>I.E San Francisco de Paula</td>
+            <td>Principal</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2017-2018</td>
+            <td>SENA</td>
+            <td>I.E San Francisco de Paula</td>
+            <td>Si</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <h2>AGREGAR ESTUDIOS</h2>
+      <form action="/action.php" method="post">
+        AÑO: <input max="2040" min="1" name="AÑO" step="1" type="number" value="2001" />
+        <br /><br />
+        INSTITUCIÓN: <input name="INSTITUCIÓN" type="text" required="required"
+          placeholder="Ingresa nombre de la institución" />
+        <br /><br />
+
+        SEDE: <textarea cols="20" name="comments" rows="5">Comment</textarea>
+        <br /><br />
+
+        ¿CULMINÓ?: <input checked="checked" name="newsletter" type="radio" value="daily" />
+        Si <input name="newsletter" type="radio" value="weekly" />
+        No
+        <br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend>CONTACTO</legend>
+      <ui>
+        <li>Dirección: Carrera 10 #18-34 Barrio San Francisco</li>
+        <li>Teléfono: 314 708 0829</li>
+        <li>Ciudad: Chinchiná - Caldas</li>
+        <li>Correo Electrónico: rinyouth11@gmail.com</li>
+      </ui>
+    </fieldset>
+    <br />
+  </div>
+</body>
+
+</html>
